@@ -167,7 +167,7 @@ def search_jackett(payload, method):
 
     log.debug(f"Processing {method} with Jackett")
     if method == 'movie':
-        res = jackett.search_movie(payload["search_title"], payload['year'], payload["imdb_id"])
+        res = jackett.search_movie(payload["search_title"], str(payload['year']), payload["imdb_id"])
     elif method == 'season':
         res = jackett.search_season(payload["search_title"], payload["season"], payload["imdb_id"])
     elif method == 'episode':
