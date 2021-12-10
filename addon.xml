@@ -6,6 +6,7 @@
         <import addon="plugin.video.elementum"/>
         <import addon="script.module.urllib3"/>
         <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" version="2.21.0"/>
     </requires>
     <extension point="xbmc.python.script" library="jackett.py">
         <provides>executable</provides>
